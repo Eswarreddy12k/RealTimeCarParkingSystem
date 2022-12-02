@@ -22,7 +22,7 @@ function App() {
           
         {data1.map((datax,e)=>{
           return(
-            data1[e].status==0 &&
+            data1[e].status.toString()===(0).toString() &&
             <>
             <div className="freeslotsflex1"><h3>{data1[e].slot_id}</h3></div>
             </>
@@ -44,9 +44,9 @@ function App() {
               <>
               <div className='carslot'>
               <div className='whitestrip'></div>
-              {data1[e].status==1 &&
+              {data1[e].status.toString()===(1).toString() &&
           <img src='https://www.seekpng.com/png/full/257-2576097_car-red-vehicle-automobile-auto-car-clipart-top.png' alt=''/>}
-          {data1[e].status==0 &&
+          {data1[e].status.toString()===(0).toString() &&
           <div className='blank'><h1>{data1[e].slot_id}</h1></div>}
           <div className='whitestrip'></div>
         </div>
